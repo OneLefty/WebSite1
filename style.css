@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(81, 0, 0);
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 0, 0);
+}
+.header-page {
+  text-align: center;
+  position: relative;
+}
+.onelefty {
+  width: 128px;
+  transition: 1.5s ease-in-out;
+  z-index: 1;
+}
+.onelefty:hover {
+  width: 200px;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  transform: rotate(360deg);
+}
+body {
+  background-image: url(./bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.body-page {
+  width: 1000px;
+  height: auto;
+  max-width: 97%;
+  min-width: 0%;
+  background-color: rgba(34, 34, 34, 0.773);
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: rgb(73, 73, 73);
+  box-shadow: rgba(153, 153, 153, 0.35) 0px 5px 40px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  bottom: 10px;
+}
+.header-body-page {
+  width: auto;
+  border: 2px solid;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-color: rgba(255, 0, 0, 0.253);
+  color: white;
+  margin: 0 auto;
+  transition: 1.2s;
+  display: flex;
+  position: relative;
+}
+.header-body-page:hover {
+  border-color: rgba(255, 0, 0, 0.6);
+  box-shadow: rgba(255, 0, 0, 0.3) 0px 2px 12px 10px inset;
+}
+.sandoo {
+  width: 10vh;
+  height: 10vh;
+  margin: 10px;
+  border-radius: 17px;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  float: left;
+  position: flex;
+  box-shadow: rgba(255, 255, 255, 1) 0px 0px 10px;
+}
+.TextTitle {
+  font-size: 3vh;
+  margin-left: 13vh;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: comicsans;
+}
+.TextTitle span {
+  color: white;
+  transition: 1.2s;
+  user-select: none;
+}
+.TextTitle span:hover {
+  color: red;
+}
+.here-you-have {
+  color: white;
+  text-align: center;
+  font-size: 3vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-family: comicsans;
+}
+@font-face {
+  font-family: comicsans;
+  src: url(./COMIC.TTF);
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.c1 {
+  display: block;
+  margin: 5px auto;
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  border-radius: 20px;
+  transition: 0.25s;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 100px) {
+  .c1 {
+    width: 40vh;
+    height: 25vh;
+  }
+}
+
+.c1:hover {
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  box-shadow: rgba(255, 0, 0, 0.5) 0px 0px 20px 10px;
+}
+@media screen and (max-width: 830px) {
+  .column {
+    width: 100%;
+  }
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+h2 {
+  color: white;
+  text-align: center;
+}
+.footer-body-page {
+  width: 100%;
+  height: auto;
+  border: 2px solid;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+  border-color: rgba(255, 0, 0, 0.253);
+  color: white;
+  margin: 0 auto;
+  transition: 1.2s;
+  display: inline-block;
+  position: relative;
+}
+.footer-body-page:hover {
+  border-color: rgba(255, 0, 0, 0.6);
+  box-shadow: rgba(255, 0, 0, 0.3) 0px 2px 12px 10px inset;
+}
+.copyright::before {
+  content: "© OneLefty. All Rights reserved";
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  display: block;
+  text-align: center;
+}
+.row-footer::after {
+  content: "";
+  display: grid;
+  clear: both;
+}
+.column-footer {
+  float: left;
+  width: 50%;
+}
+.c2 {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  color: white;
+}
+
+.c2 a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.c2 a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.c2 a:hover {
+  text-decoration: none;
+}
+
+.c2 a:active {
+  text-decoration: none;
+}
+@media screen and (max-width: 831px) {
+  .column-footer {
+    width: 100%;
+  }
+}
+.instagramimage{
+  width: 16px;
+}
+.facebookimage{
+  width: 16px;
+}
+.steamimage{
+  width: 16px;
+}
+.faceitimage{
+  width: 16px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+body{margin: 0;}
+#levelpic{
+  height: 30px;
+  width: 30px;
+  position: relative;
+  top: 2px;
+  left: 5px;
+}
+#elo{
+  color: white;
+  font-family: ethnocentric;
+  position: relative;
+  left: 0px;
+  bottom: 8px;
+  font-size: 18px;
+}
+  @font-face {
+    font-family: ethnocentric;
+    src: url(./ethnocentric\ rg.otf);
+
+}
+#wrap{
+  background-color: #ffffff05;
+  height: 35px;
+  width: 100px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: 1px solid;
+  border-color: rgb(83, 83, 83);
+  margin: 0 auto;
+  transition: 1s;
+}
+#wrap:hover{
+  box-shadow: white 0px 8px 25px 0px;
+}
